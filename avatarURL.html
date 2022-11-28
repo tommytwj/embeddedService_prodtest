@@ -21,16 +21,14 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-		
+
+		embedded_svc.settings.defaultMinimizedText = 'Chat with us'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 		//Chat Icons 
 		embedded_svc.settings.smallCompanyLogoImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602931000/casey36x36?';
 		embedded_svc.settings.avatarImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602911000/casey40x40?';
 		embedded_svc.settings.chatbotAvatarImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602911000/casey40x40?';
 		
-		
-
-		embedded_svc.settings.defaultMinimizedText = 'Chat With Us' //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -43,21 +41,20 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-		
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://capitaland--prodtest.sandbox.my.salesforce.com',
-			'https://capitaland--prodtest.sandbox.my.site.com/',
+			'https://capitaland--dev.sandbox.my.salesforce.com',
+			'https://capitaland--dev.sandbox.my.site.com/',
 			gslbBaseURL,
-			'00D9D0000000Tjm',
+			'00D9D0000000Xga',
 			'Chat_Support_Team',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-ukb.salesforceliveagent.com/content',
-				deploymentId: '5725j000000H388',
-				buttonId: '5735j000000H3nc',
+				deploymentId: '5729D0000004CXs',
+				buttonId: '5739D0000004CnM',
 				baseLiveAgentURL: 'https://d.la1-c1cs-ukb.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Chat_Support_Team',
 				isOfflineSupportEnabled: false
@@ -67,7 +64,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://capitaland--prodtest.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://capitaland--dev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -76,7 +73,6 @@
 		initESW('https://service.force.com');
 	}
 </script>
-
 </head>	
 <body>
 The content of the body element is displayed in your browser.
