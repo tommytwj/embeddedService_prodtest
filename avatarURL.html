@@ -3,16 +3,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<!-- Need to include  this liner for the pre-chat form CSS -->
-	<!-- <link rel="stylesheet" type="text/css" href="updated_css.css" />-->
-	<!--<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>-->
+	<link rel="stylesheet" type="text/css" href="updated_css.css" />-->
+
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #40CED9;
@@ -25,18 +17,17 @@
 
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 		
 		//Chat Icons 
-		embedded_svc.settings.prechatBackgroundImgURL = 'https://capitaland--dev.sandbox.my.site.com/resource/1669366855000/casey320x100';
-		embedded_svc.settings.smallCompanyLogoImgURL = 'https://capitaland--dev.sandbox.my.site.com/resource/1669365679000/casey36x36';
-		embedded_svc.settings.waitingStateBackgroundImgURL = 'https://capitaland--dev.sandbox.my.site.com/resource/1669366829000/Casey250x60';
-		embedded_svc.settings.avatarImgURL = 'https://capitaland--dev.sandbox.my.site.com/resource/1669365647000/casey40x40';
-		embedded_svc.settings.chatbotAvatarImgURL = 'https://capitaland--dev.sandbox.my.site.com/resource/1669365647000/casey40x40';
+		embedded_svc.settings.prechatBackgroundImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602976000/casey320x100?';
+		embedded_svc.settings.smallCompanyLogoImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602931000/casey36x36?';
+		embedded_svc.settings.waitingStateBackgroundImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602957000/casey250x60?';
+		embedded_svc.settings.avatarImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602911000/casey40x40?';
+		embedded_svc.settings.chatbotAvatarImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1669602911000/casey40x40?';
 
 		embedded_svc.settings.defaultMinimizedText = 'Chat With Us' //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
