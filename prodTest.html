@@ -48,7 +48,7 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = 'Chat With them'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.defaultMinimizedText = 'Chat With Us'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 		//Chat Icons using URL
 		embedded_svc.settings.smallCompanyLogoImgURL = 'https://capitaland--prodtest.sandbox.my.site.com/resource/1673495000000/Casey_CNY_Logo?';
@@ -74,7 +74,7 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-		
+		embedded_svc.bootstrapEmbeddedService();
 		embedded_svc.settings.extraPrechatFormDetails = [
                     {"label":"First Name", "transcriptFields": ["Customer_First_Name__c"]},
                     {"label":"Last Name", "transcriptFields": ["Customer_Last_Name__c"]},
