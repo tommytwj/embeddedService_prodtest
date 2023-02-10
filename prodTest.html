@@ -29,10 +29,13 @@
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script>
-	document.getElementsByClassName("uiButton no-hover helpButtonEnabled").click();
-	//document.getElementsByClassName("helpButtonEnabled").click();
-	//document.getElementsByClassName("embeddedServiceHelpButton").click();
-	//document.getElementsByClassName("helpButton").click();
+	//document.getElementsByClassName("uiButton no-hover helpButtonEnabled").click();
+	var btn = document.getElementsByClassName("uiButton");
+	function displayMsg(){
+		var msg = "Clicked";
+		alert(msg);
+	}
+	btn.addEventListener("click",displayMsg);
 </script>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
